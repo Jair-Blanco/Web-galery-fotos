@@ -1,0 +1,248 @@
+/* PATRONES GLOBALES DE CSS */
+
+/* Tipografía Principal */
+h1, h2, h3, a, button { font-family: 'Montserrat', sans-serif; }
+
+/* Tipografía Secundaria */
+h4, h5, h6, p, form, input, select, option, div, span { font-family: 'Poppins', sans-serif; }
+
+/* Asignación de propiedad display: block; a etiquetas de estructura */
+header, main, section, footer, aside, article, nav, figure, figcaption, div { display: block; }
+
+/*quitar margen que traen margen po defecto varias equitas de html*/
+h1, h2, h3,h4, h5, h6, p, article, body {margin: 0;}
+
+/*quitar scroll horizontal*/
+body {overflow-x:hidden;  background:#000; }
+
+/* CSS Propio */
+
+
+
+
+
+
+
+/* Componente Header */
+header { width: 100%; height:90px;  margin:0; float:none; position: fixed; left: 0; top: 0; z-index: 9998; 
+ }
+
+header article { width:1100px;  height:80px;  margin:0 auto;  float:none;   position:relative; }
+
+header article a { width:189px;  height:70px; display:block; position:relative;  margin:0 auto;  
+float:none;  top:10px}  
+
+header article a img { width: auto; height: 70px; margin: 0 auto; float: none; position: relative; 
+display: block; }
+
+.transparente {background: rgb(196 196 196 / 40%); }
+
+
+
+
+
+/* Componente:contenedor Main */
+main { width:100%;  height:auto;  position:relative;  margin:0 auto; float:none; }
+
+
+/*slider*/
+main section#slider-home{ width:100%;  height:auto;  position:relative;  margin:0 auto;  float:none;
+background: url(../img/slider-01.jpg) no-repeat; top:center;   background-size:cover; }
+
+main section#slider-home article { width:100%;  height:100vh;  position:relative;  margin:0 auto;  float:none;
+}
+
+main section#slider-home article figure { width:100%;  height:100vh;  position:relative;  margin:0;  
+float:left;}
+
+main section#slider-home article figure.slider-01{ background: url(../img/slider-01.jpg) no-repeat; 
+top:center; background-size:cover; }
+
+main section#slider-home article figure.slider-02{ background: url(../img/slider-02.jpg) no-repeat; 
+top:center; background-size:cover; } 
+
+main section#slider-home article figure.slider-03{  background: url(../img/slider-03.jpg) no-repeat; 
+top:center; background-size:cover;} 
+
+
+.slick-next {right: 30px !important; z-index: 999;}
+.slick-prev { left: 30px !important; z-index: 999;}
+
+
+
+
+
+
+
+/*banner*/
+main section#baner {width:100%; height:auto;  position:relative;  margin:0 auto;  float:none;   }
+main section#baner nav{width:100%; height:555px; position:relative; margin:0 auto;  float:none;  background:#000; }
+main section#baner nav a{ position:absolute; display:block; transition:0.3s ease-in;}
+main section#baner nav a:hover { opacity:0.5;  transition:0.3s ease-in;}
+
+main section#baner nav a#img-baner-01 {width:50%; height:100%;  top:0; left:0;  
+background: url(../img/foto-1.jpg) no-repeat;  top:center;  background-size:cover; }
+
+main section#baner nav a#img-baner-02{width:50%; height:50%;  top:0; right:0;  
+background: url(../img/foto-2.jpg) no-repeat;  top:center;  background-size:cover; }
+
+main section#baner nav a#img-baner-03{width:15%; height:50%;  bottom:0; right:35%;  
+background: url(../img/foto-3.jpg) no-repeat;  top:center;  background-size:cover;}
+
+main section#baner nav a#img-baner-04{width:35%; height:50%;  bottom:0; right:0;  
+background: url(../img/foto-4.jpg) no-repeat;  top:center;  background-size:cover; } 
+
+
+
+
+/*componente fotos medio*/
+
+main section#fotos-medio{width:100%; height:auto;  position:relative;  margin:0 auto;  float:none; 
+background:#fff;  }
+
+main section#fotos-medio article{width:1100px; height:auto; position:relative; margin:0 auto;  
+float:none; padding: 80px 0;}
+
+main section#fotos-medio article a{width:330px;  height:330px; display:inline-block; margin:17px; 
+float:none; position:relative;   overflow:hidden;   transition: all 0.3s ease-in;}
+
+main section#fotos-medio article a img {width:100%;  height:auto; display:block; margin:0 auto; 
+float:none; position:relative;  transition: all 0.3s ease-in;}
+
+main section#fotos-medio article a:hover{opacity:0.7;  transition: all 0.3s ease-in;} 
+
+main section#fotos-medio article a:hover img {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+
+
+
+/*fotos-abajo*/
+main section#foto-abajo{width:100%; height:auto;  position:relative;  margin:0 auto;  float:none; }
+
+
+main section#foto-abajo nav {width:100%; height:1000px; position:relative; margin:0 auto;  float:none;  
+background:#000;}
+
+main section#foto-abajo nav a {position:absolute; display:block; transition:0.3s ease-in;}
+main section#foto-abajo nav a:hover { opacity:0.5;  transition:0.3s ease-in;}
+
+main section#foto-abajo nav a#img-fotos-1{width:50%; height:50%;  top:0; left:0;  
+background: url(../img/fo-1.jpg) no-repeat;  top:center;  background-size:cover; }
+
+
+main section#foto-abajo nav a#img-fotos-2{width:25%; height:25%;  top:0; right:25%;  
+background: url(../img/fo-2.jpg) no-repeat;  top:center;  background-size:cover; }
+
+main section#foto-abajo nav a#img-fotos-3{width:25%; height:25%;  top:0; right:0;  
+background: url(../img/fo-3.jpg) no-repeat;  top:center;  background-size:cover; }
+
+main section#foto-abajo nav a#img-fotos-4{ width:50%; height:25%;  top:25%; right:0;  
+background: url(../img/fo-4.jpg) no-repeat;  top:center;  background-size:cover;}
+
+main section#foto-abajo nav a#img-fotos-5{width:50%; height:25%;  bottom:25%;  left:0;  
+background: url(../img/fo-5.jpg) no-repeat;  top:center;  background-size:cover;}
+
+main section#foto-abajo nav a#img-fotos-6{width:25%; height:25%;  bottom:0;  left:0;   
+background: url(../img/fo-6.jpg) no-repeat;  top:center;  background-size:cover;  }
+
+main section#foto-abajo nav a#img-fotos-7{width:25%; height:25%;  bottom:0;  left:25%;   
+background: url(../img/fo-7.jpg) no-repeat;  top:center;  background-size:cover; }
+
+main section#foto-abajo nav a#img-fotos-8{ width:50%; height:50%;  bottom:0;  right:0;   
+background: url(../img/fo-8.jpg) no-repeat;  top:center;  background-size:cover; }
+
+
+
+
+
+/* Componente Footer */
+footer { }  
+
+
+
+
+
+
+/* inferior footer */
+
+
+
+
+
+/* Zona de Media Queries - RESPONSIVE DESIGN */
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+
+
+
+     header { height:80px; }
+     header article {  width:90%;    height:80px;  }
+     header article a {width:118px;  height:50px;  margin:0;  float:right;  top:15px; }
+     header article a img {width:100%;  height:auto; }    
+
+    main{ margin:80px auto 0 auto;}
+    
+    main section#baner nav{height:470px;}
+    main section#baner nav a{position:relative;  float:left; }
+    main section#baner nav a#img-baner-01 {width:50%; height:50%;}
+    main section#baner nav a#img-baner-02{width:50%; height:50%;}
+    main section#baner nav a#img-baner-03{width:50%; height:50%; right:0; }
+    main section#baner nav a#img-baner-04{width:50%; height:50%; } 
+
+    main section#fotos-medio article{width:80%;}
+
+    main section#fotos-medio article a{width:300px;  height:300px;  margin:0 auto 35px; 
+    display:block; }
+
+
+main section#foto-abajo nav { height:1030px;}
+
+
+main section#slider-home article {height: 75vh;}
+
+
+
+
+main section#foto-abajo nav a {position:relative; float:left; }
+
+main section#foto-abajo nav a#img-fotos-1{width:100%; height:290px; }
+main section#foto-abajo nav a#img-fotos-2,
+main section#foto-abajo nav a#img-fotos-3,
+main section#foto-abajo nav a#img-fotos-4,
+main section#foto-abajo nav a#img-fotos-5,
+main section#foto-abajo nav a#img-fotos-6,
+main section#foto-abajo nav a#img-fotos-7{width:50%; height:150px;}
+
+
+main section#foto-abajo nav a#img-fotos-2{ right: 0;}
+main section#foto-abajo nav a#img-fotos-4{ top: 0;}
+main section#foto-abajo nav a#img-fotos-5{ bottom: 0;}
+main section#foto-abajo nav a#img-fotos-7{ left: 0;}
+
+
+main section#foto-abajo nav a#img-fotos-8{ width:100%; height:290px; }
+
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 799px){
+    
+}
+
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+    
+}
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+
+	main section#fotos-medio article a{width:100%;  height:auto;}
+    
+}
